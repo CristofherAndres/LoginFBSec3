@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "527185736597",
+    "project_id": "loginsec3-588a1",
+    "storage_bucket": "loginsec3-588a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527185736597:android:53e5489acf4d0595fc3c9c",
+        "android_client_info": {
+          "package_name": "com.example.loginfbsec3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuw2eYmJ7iXA-cyXLPC7BjVFrXlRR1cPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
