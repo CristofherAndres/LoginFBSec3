@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        //Reconocer si hago click sobre el tvRegistrar
+        binding.tvRegistrar.setOnClickListener {
+            val intent = Intent(this,registrarActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun signIn(email: String, password: String) {

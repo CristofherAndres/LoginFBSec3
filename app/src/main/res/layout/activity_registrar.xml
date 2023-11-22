@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_margin="50dp"
-    >
+    tools:context=".registrarActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textAppearance="@style/TextAppearance.Material3.DisplayLarge"
+        android:text="Registrar Usuario"
+        android:layout_marginTop="30dp"
+        android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +23,7 @@
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_email"
         android:hint="Correo Electronico"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="50dp"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -36,6 +36,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
+        android:layout_marginHorizontal="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
@@ -52,25 +53,32 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Confirmar Contraseña"
+        android:layout_marginTop="20dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        app:startIconDrawable="@drawable/ic_pass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
-        android:id="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        android:layout_marginHorizontal="50dp"
+        android:text="Registrar usuario"
+        android:id="@+id/btnRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword2"
         android:layout_marginTop="50dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvRegistrar"
-        android:text="¿No estas registrado? Registrate"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
